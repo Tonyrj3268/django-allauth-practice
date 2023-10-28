@@ -1,0 +1,12 @@
+<ul>
+  <li><a href="/index">首頁</a></li>
+  {% if request.user.is_authenticated %}
+  <li><a href="/book_list">書籍清單</a></li>
+  {% if request.user.is_superuser %}
+  <li><a href="/new">新增書籍</a></li>
+  {% endif %}
+  <li><a href="{% url 'account_logout' %}">Logout</a></li>
+  {% else %}
+  <li><a href="{% url 'account_login' %}">Login</a></li>
+  {% endif %}
+</ul>

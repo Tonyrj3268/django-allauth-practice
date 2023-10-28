@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "allauth-practice"
+version = "0.1.0"
+description = ""
+authors = ["TonyLin"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.6"
+django-allauth = "0.57.0"
+django-allauth-ui = "^0.1.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
